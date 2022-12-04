@@ -7,76 +7,79 @@
     tools:context=".MainActivity">
    <EditText
        android:id="@+id/num1"
-       android:layout_width="330dp"
+       android:layout_width="match_parent"
        android:layout_height="50dp"
-       android:layout_margin="15dp"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toTopOf="parent"
-       android:hint="number 1"
-       android:inputType="number"
-       android:textColorHint="@color/black"
-       android:textSize="20sp">
+app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+       android:layout_margin="5dp"
+      android:hint="number 1"
+      android:textColorHint="@color/black"
+      android:textSize="20sp">
    </EditText>
    <EditText
        android:id="@+id/num2"
-       android:layout_width="330dp"
+       android:layout_width="match_parent"
        android:layout_height="50dp"
-       android:layout_margin="15dp"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/num1"
-       android:hint="number 1"
-       android:inputType="number"
-       android:textColorHint="@color/black"
-       android:textSize="20sp">
-   </EditText>
+      app:layout_constraintTop_toBottomOf="@id/num1"
+      app:layout_constraintStart_toStartOf="parent"
+      android:hint="number 2"
+      android:textColorHint="@color/black"
+      android:textSize="20sp"
+      android:layout_margin="5dp"
+      ></EditText>
    <Button
        android:id="@+id/sum"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       app:layout_constraintStart_toStartOf="parent"
-       app:layout_constraintTop_toBottomOf="@+id/num2"
-       android:text="+"
-       android:textSize="20sp"
-       android:layout_margin="10dp">
-   </Button>
-   <Button
-       android:id="@+id/sub"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintStart_toEndOf="@id/sum"
-       app:layout_constraintTop_toBottomOf="@+id/num2"
-       android:text="-"
-       android:textSize="20sp"
-       android:layout_margin="10dp">
-   </Button>
-   <Button
-       android:id="@+id/mult"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintStart_toEndOf="@id/sub"
-       app:layout_constraintTop_toBottomOf="@+id/num2"
-       android:text="*"
-       android:textSize="20sp"
-       android:layout_margin="10dp">
-   </Button>
-   <Button
-       android:id="@+id/div"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       app:layout_constraintStart_toEndOf="@id/mult"
-       app:layout_constraintTop_toBottomOf="@+id/num2"
-       android:text="/"
-       android:textSize="20sp"
-       android:layout_margin="10dp">
-   </Button>
-   <TextView
-       android:id="@+id/result"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
+      app:layout_constraintTop_toBottomOf="@id/num2"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@id/sum"
-      android:text="Result"
-      android:textSize="30sp"
-      android:layout_margin="15dp">
-   </TextView>
-</androidx.constraintlayout.widget.ConstraintLayout>
+      android:text="+"
+      android:textSize="20sp"
+      android:layout_margin="2dp">
+
+   </Button>
+      <Button
+          android:id="@+id/sub"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         app:layout_constraintStart_toEndOf="@id/sum"
+         app:layout_constraintTop_toBottomOf="@id/num2"
+         android:layout_margin="2dp"
+         android:text="-"
+         android:textSize="20sp"
+         ></Button>
+
+<Button
+android:id="@+id/mult"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:layout_constraintStart_toEndOf="@id/sub"
+app:layout_constraintTop_toBottomOf="@id/num2"
+android:layout_margin="2dp"
+android:text="*"
+android:textSize="20sp"
+    ></Button>
+<Button
+android:id="@+id/div"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:layout_constraintStart_toEndOf="@id/mult"
+app:layout_constraintTop_toBottomOf="@id/num2"
+android:layout_margin="2dp"
+android:text="/"
+android:textSize="20sp"
+    ></Button>
+   <TextView
+      android:id="@+id/Result"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+app:layout_constraintTop_toBottomOf="@id/sum"
+      app:layout_constraintStart_toEndOf="@id/sum"
+android:text="Result"
+      android:textSize="20sp"
+android:textColor="@color/black"
+      android:layout_marginLeft="65dp"
+      android:layout_marginTop="5dp"
+      ></TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
